@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    background-image: url(../img/wp10165089-genshin-impact-scenery-wallpapers.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+.nav{
+    background-color: rgb(0, 179, 0);
+    font-size: 35px;
+    padding: 10px;
+}
+.nav .fa-bars{
+    display: none;
+}
+
+.logo{
+    height: 75px;
+    position: absolute;
+    padding-left: 40px;
+}
+
+
+
+.nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+}
+
+.nav > ul >li:hover ul {
+    display: block;
+}
+
+.nav > ul > li > a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav > ul > li {
+    position: relative;
+}
+
+.nav > ul > li > ul > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+}
+.nav > ul > li > ul {
+    display: none;
+    list-style-type: none;
+    width:100% ;
+    font-size: 20px;
+    position: absolute;
+    left: 17px;
+    background-color: rgb(0, 179, 0);
+}
+.parrafo{
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+    font-size: x-large;
+}
+.parrafo > h1{
+    padding: 10px;
+}
+
+.imagen {
+    background-image: url(../img/paisaje2.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 58%;
+}
+.contenido{
+    display: flex;
+    padding-top: 60px;
+}
+
+.subtitulo{
+    padding-top: 40px;
+    padding-left: 40px;    
+}
+
+.tarjeta{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta > img{
+    padding: 0px;
+    padding: 80px;
+}
+footer{
+    display: flex;
+    background-color: rgb(8, 78, 8);
+    justify-content: space-between;
+    align-items: center;
+}
+.logoPie{
+    width: 168px;
+    display: flex;
+    padding: 10px;
+}
+
+.logoPie img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.pie{
+    display: flex;
+    list-style-type: none;
+}
+
+.pie > li > a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.pie > li{
+ padding-right: 20px;   
+}
+
+.cuerpoPropuesta{
+    width: 100%;
+    padding: 40px;
+}
+.tituloPropuesta{
+    font-size: 36px;
+    justify-content: center;
+    display: flex;
+}
+
+.textoPropuesta{
+    font-size: x-large;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+}
+
+.paisajePropuesta{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.imagenMainPropuesta{
+    width: 800px;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.divMainPropuesta{
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.imagenMainPropuesta2{
+    width: 800px;
+    display: block;
+    padding-left: 40px;
+}
+
+.divMainPropuesta > .imagenMainPropuesta2 > h3{ 
+    font-size: 32px;
+}
+
+/*Pestaña de Estudios*/
+
+.tituloEstudios{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 50px;
+    justify-content: center;
+    align-content: center;
+}
+.tituloEstudios > p{
+    font-size: 24px;
+}
+
+.tituloEstudios > h1 {
+    position: absolute;
+    top: 95px;
+    font-size: 60px;
+}
+
+.estudio{
+    margin: 40px;
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+}
+.estudio > img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.textoEstudio{
+    display: block;
+    padding-left: 40px;
+}
+.textoEstudio > h3 {
+    font-size: 36px;
+}
+.textoEstudio > p{
+    font-size: 20px;
+}
+.btnEstudios{
+    background: transparent;
+    border: none;
+    color: black;
+    padding: 12px 18px ;
+    position: relative;
+    margin-top: 40px;
+    font-size: 16px;
+}
+.btnEstudios > i{
+    padding-left: 20px;
+    font-size: 18px;
+}
+.btnEstudios .circulo{
+    width: 45px;
+    height:  45px;
+    border-radius: 50px;
+    background-color: rgb(0, 179, 0);
+    position: absolute;
+    z-index: -1;
+    left: 85px;
+    transform: translate(0px,-50%);
+    top: 50%;
+    transition: width 0.25s ,left 0.25s 0.25s;
+}
+.btnEstudios:hover .circulo{
+    left: 0%;
+    width: 100%;
+    transition: left 0.25s , width 0.25s 0.25s;
+}
+
+@media(max-width:1150px){
+    .estudio > img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media(max-width:990px){
+    .nav .fa-bars {
+        display: block;
+        color: white;
+        font-size: 44px;
+        margin: 32px;
+    }
+    .nav > ul {
+        position: fixed;
+        background-color: #00b300;
+        top: 0;
+        left: -300px;
+        flex-direction: column;
+        justify-content: start;
+        width: 250px;
+        height: 100vh;
+        padding-left: 30px;
+        padding-top: 30px;
+        transition: 0.25s;
+        }
+        
+        
+        
+        .tituloEstudios > h1 {
+            position: absolute;
+            top: 150px;
+            font-size: 40px;
+        }
+        .nav .fa-bars:hover + a {
+            left: 0;
+        }
+        .nav ul:hover{
+            left: 0;
+        } 
+ 
+        .logo{
+        display:none;
+
+
+    }
+
+@media(max-width:785px){
+        .estudio > img{
+            width: 200px;
+            height: 200px;
+        }
+        .textoEstudio > h3 {
+            font-size: 24px;
+        }
+        .textoEstudio > p{
+            font-size: 14px;
+        }
+        .tituloEstudios > h1 {
+            position: absolute;
+            top: 150px;
+            font-size: 40px;
+        }
+        .tituloEstudios > p{
+            font-size: 14px;
+        }
+    }
+
+    .navbar-brand{
+        color: white;
+    }
+}
