@@ -4,79 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        form{
-            height: 40%;
-
-            width: 50%;
-        }
-        textarea{
-            width: 200px;
-            height: 50px;            
-        }
-    </style>
+    <title>Contactos</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/1ba56ac9f5.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./propuesta.html">Propuesta</a></li>
-            <li><a href="./estudios.html">Estudios</a></li>
-            <li><a href="./trabajos.html">Trabajos</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+<body class="body_contacto">
+    <nav class="nav">
+        <div class="nav_container">
+            <div>
+                <img class="nav_logo" src="../assets/img/logo-social.png" alt="">
+            </div>
+            <label for="menu" class="nav_label">
+                <img src="../assets/svg/menu.svg" class="nav_img">
+            </label>
+            <input type="checkbox" id="menu" class="nav_input">
+            <div class="nav_menu">
+               <a href="../index.html" class="nav_item">Inicio</a>
+               <a href="./propuesta.html" class="nav_item">Propuesta</a>
+               <a href="./estudios.html" class="nav_item">Naciones</a>
+               <a href="./trabajos.html" class="nav_item">Descubrir</a>
+               <a href="./contacto.html" class="nav_item">Contactos</a>
+            </div>
+        </div>
     </nav>
     <header>
-       
+        <div class="contact_form">
+            <div class="formulario">      
+              <h1>Contactanos</h1>
+                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                    <section class="inputs">                        
+                        <p class="box_input">
+                          <label for="nombre" class="colocar_nombre">Nombre
+                          </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                      
+                        <p class="box_input">
+                          <label for="email" class="colocar_email">Email
+                          </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                    
+                        <p class="box_input">
+                          <label for="telefone" class="colocar_telefono">Teléfono
+                          </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>                     
+                        <p class="box_input">
+                          <label for="mensaje" class="colocar_mensaje">Mensaje
+                          </label>                     
+                         <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                        </p>                    
+                        </p>                    
+                      
+                            <button type="submit" name="enviar_formulario" id="enviar">
+                                <p class="box_input">Enviar</p>
+                            </button>
+        
+                        </p>          
+                    
+                    </section> 
+            </div>  
+        </div>
+        
     </header>
     <main>
-        <form action="" method="get ">
-            <fieldset>
-                <legend> formulario interactivo
-                    <label>
-                        Nombre:
-                        <input type="text" name="nombre" placeholder="Nombre" required>
-                    </label>
-                    <label>
-                        Apellido:
-                        <input type="text" name="apellido" placeholder="Apellido" required>
-                    </label>
-                    <label>
-                        Email
-                        <input type="email" name="mail" placeholder="E-Mail" required>
-                    </label>
-                    <label>
-                        mensaje
-                        <textarea name="mensaje"></textarea>
-                    </label>
-                    <label>
-                        Hombre
-                        <input type="radio" name="sexo" value="h" checked>
-                    </label>
-                    <label>
-                        Mujer
-                        <input type="radio" name="sexo" value="m">
-                    </label>
-                    <label>
-                        No binario
-                        <input type="radio" name="sexo" value="nb">
-                    </label>
-                </legend>
-            </fieldset>
-        </form>
+    
     </main>
     <aside>
 
     </aside>
-    <footer>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./propuesta.html">Propuesta</a></li>
-            <li><a href="./estudios.html">Estudios</a></li>
-            <li><a href="./trabajos.html">Trabajos</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </footer>
+    <footer class="pie_pagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../assets/img/logo-social.png" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, illum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, illum.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red_social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a> 
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2023 <b>Kreyzr</b> - Todos los Derechos Reservados</small>
+        </div>
+       </footer>
 </body>
 </html>

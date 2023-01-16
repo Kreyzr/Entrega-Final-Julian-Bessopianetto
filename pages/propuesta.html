@@ -4,57 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Propuesta</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/1ba56ac9f5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="nav">
-        <a href="./index.html">
-            <img class="logo" src="../assets/img/logo-social.png" alt="">
-        </a>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/propuesta.html">Propuesta</a></li>
-            <li><a href="../pages/estudios.html">Estudios</a></li>
-            <li>
-                <a href="../pages/trabajos.html">Trabajos</a>
-                <ul>
-                    <li><a href="">SubItem</a></li>
-                    <li><a href="">SubItem</a></li>
-                    <li><a href="">SubItem</a></li>
-                </ul>
-            </li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <header class="cuerpoPropuesta">
-        <h1 class="tituloPropuesta">Propuesta</h1>
-        <p class="textoPropuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam vero voluptates fugiat quos sunt deleniti maiores exercitationem. Aliquam id placeat tenetur, perspiciatis nulla porro perferendis nemo aspernatur ducimus recusandae?</p>
-    </header>
-    <main class="mainPropuesta">
-        <img class="paisajePropuesta" src="../assets/img/paisaje4.jpg" alt="">
-        <div class="divMainPropuesta">
-             <img class="imagenMainPropuesta" src="../assets/img/wp10165089-genshin-impact-scenery-wallpapers.jpg" alt="">
-            <div class="imagenMainPropuesta2">
-                <h3>Lorem, ipsum.</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nihil quas commodi incidunt. Iusto itaque explicabo, excepturi beatae nesciunt quam temporibus numquam, commodi, esse dolor laboriosam error provident quidem molestias.</p>
+        <div class="nav_container">
+            <div>
+                <img class="nav_logo" src="../assets/img/logo-social.png" alt="">
             </div>
-         </div>
-    </main>
+            <label for="menu" class="nav_label">
+                <img src="../assets/svg/menu.svg" class="nav_img">
+            </label>
+            <input type="checkbox" id="menu" class="nav_input">
+            <div class="nav_menu">
+               <a href="../index.html" class="nav_item">Inicio</a>
+               <a href="./propuesta.html" class="nav_item">Propuesta</a>
+               <a href="./estudios.html" class="nav_item">Naciones</a>
+               <a href="./trabajos.html" class="nav_item">Descubrir</a>
+               <a href="./contacto.html" class="nav_item">Contactos</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <section class="container_propuesta">
+            <h1>Propuesta</h1>
+        </section>
+    </header>
+        <main class="main_Propuesta">
+            <div class="contenido_img">
+                <img src="../assets/img/paisaje5.jpg" alt="imagen de prueba">
+            </div>
+            <div class="texto_propuesta">
+                <h3>¿Qué es lo que proponemos?</h3>
+                <p>Esta página tiene como fin unir dos pasiones de muchos aficionados a la fantasía.</p>
+                <p>1- La aventura: llevado de la mano de uno de los videojuegos del momento con esta temática "Genshin Impact" con su historia amplia y sorprendente que no deja de brindar una experiencia totalmente renovadora para los amantes de este tipo de historias.</p>
+                <p>2: Los paisajes: por eso "Scenery" porque amamos la majestuosidad de los miles de paisajes que rodean el mundo de Teivat, tantos biomas y fantásticas imágenes que dejan volar la imaginación completamente, nos brinda una experiencia que en esta página haremos honor a representar para que puedan explorar cada rincón mágico de este maravilloso mundo.</p>
+            </div>
+        </main>
     <aside>
 
     </aside>
-    <footer>
-        <a class="logoPie" href="./index.html">
-            <img src="../assets/img/logo-social.png" alt="">
-        </a>
-        <ul class="pie">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/propuesta.html">Propuesta</a></li>
-            <li><a href="../pages/estudios.html">Estudios</a></li>
-            <li><a href="../pages/trabajos.html">Trabajos</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-    </footer>
+    <footer class="pie_pagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../assets/img/logo-social.png" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, illum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, illum.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red_social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a> 
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2023 <b>Kreyzr</b> - Todos los Derechos Reservados</small>
+        </div>
+       </footer>
 </body>
 </html>

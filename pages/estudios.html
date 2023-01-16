@@ -4,45 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Naciones</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/1ba56ac9f5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="nav">
-        <i class="fa-solid fa-bars"></i>
-        <a href="./index.html">
-            <img class="logo" src="../assets/img/logo-social.png" alt="">
-        </a>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/propuesta.html">Propuesta</a></li>
-            <li><a href="../pages/estudios.html">Estudios</a></li>
-            <li>
-                <a href="../pages/trabajos.html">Trabajos</a>
-                <ul>
-                    <li><a href="">SubItem</a></li>
-                    <li><a href="">SubItem</a></li>
-                    <li><a href="">SubItem</a></li>
-                </ul>
-            </li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+        <div class="nav_container">
+            <div>
+                <img class="nav_logo" src="../assets/img/logo-social.png" alt="">
+            </div>
+            <label for="menu" class="nav_label">
+                <img src="../assets/svg/menu.svg" class="nav_img">
+            </label>
+            <input type="checkbox" id="menu" class="nav_input">
+            <div class="nav_menu">
+               <a href="../index.html" class="nav_item">Inicio</a>
+               <a href="./propuesta.html" class="nav_item">Propuesta</a>
+               <a href="./estudios.html" class="nav_item">Naciones</a>
+               <a href="./trabajos.html" class="nav_item">Descubrir</a>
+               <a href="./contacto.html" class="nav_item">Contactos</a>
+            </div>
+        </div>
+    </nav>    
     <header>
-        <div class="tituloEstudios">
-            <h1>Estudios</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui dolor dicta quidem rem ipsa reiciendis ea ipsum numquam, excepturi veritatis et, voluptate est, porro beatae accusantium asperiores? Quidem, eum?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui dolor dicta quidem rem ipsa reiciendis ea ipsum numquam, excepturi veritatis et, voluptate est, porro beatae accusantium asperiores? Quidem, eum?</p>
+        <section class="container">
+            <h1>Naciones</h1>
+        </section>
+        <div class="subtitulo_estudios">
+                <p class="Subtitulo_texto">« Has llegado a Teyvat, un mundo de fantasía donde los siete elementos fluyen y convergen.</p>
+                <p class="Subtitulo_texto">En un pasado lejano, los Arcontes otorgaron a los mortales habilidades elementales únicas. Con la ayuda de tales poderes, la gente formó una patria abundante en el desierto. Sin embargo, hace 500 años, el colapso de una civilización antigua puso el universo patas arriba...</p>               
+                <p class="Subtitulo_texto">Aunque la calamidad que sufrió el mundo ha cesado, la paz aún no se ha restaurado. »</p>
+        </div>
+        <div class="titulo_Estudios">
+            <h3>Teyvat</h3>
+            <p>Es el continente donde el Viajero comienza su aventura en Genshin Impact. Como dicen las ayudas de la pantalla de carga, Teyvat tiene sus propias "leyes".</p>
         </div>
     </header>
-    <main>
+    <main class="main_estudios">
         <div class="estudio">
-            <img src="../assets/img/paisaje5.jpg" alt="">
+            <div class="img_estudio">
+                <img src="../assets/img/paisaje10.jpg" alt="">
+            </div>
             <div class="textoEstudio">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <h3>Mondstadt</h3>
+                <p>Mondstadt (en alemán: Mond Stadt, "Ciudad de la luna") es una de las siete naciones de Teyvat, y es la primera en la que el Viajero empieza a buscar a su hermana perdida. Es la ciudad-estado que adora a Barbatos, el Arconte Anemo.</p>
+                <p>« Una ciudad de la libertad que se encuentra al noreste de Teyvat. Entre montañas y llanuras abiertas, la brisa despreocupada lleva el aroma de los dientes de león, un regalo del dios Anemo, Barbatos, a través del Lago de Sidra hasta Mondstadt, que se encuentra en una isla en el medio del lago. »</p>
                 <button class="btnEstudios">
                     <div class="circulo"></div>
                     Ver mas <i class="fa-solid fa-arrow-right"></i>
@@ -50,10 +58,13 @@
             </div>
         </div>
         <div class="estudio">
-            <img src="../assets/img/paisaje5.jpg" alt="">
+            <div class="img_estudio">
+                <img src="../assets/img/paisaje7.jpg" alt="">
+            </div>            
             <div class="textoEstudio">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <h3>Liyue</h3>
+                <p>Liyue (en chino: 璃 月 [Líyuè], "Luna de Vidrio"/"Luna de Jade") es una de las siete naciones de Teyvat. También es la ciudad-Estado que adora a Morax, el Arconte Geo.</p>
+                <p>« Una ciudad con un puerto próspero situado al este de Teyvat. Liyue yace imponente entre faldas montañosas, bosques de piedra, bastas planicies y una costa llena de vida, que conforman una tierra llena de riquezas, con cambios de estación claramente definidos y llenos de color. ¿Cuántos obsequios del Arconte Geo yacerán enterrados entre sus montañas? »</p>
                 <button class="btnEstudios">
                     <div class="circulo"></div>
                     Ver mas <i class="fa-solid fa-arrow-right"></i>
@@ -61,10 +72,28 @@
             </div>
         </div>
         <div class="estudio">
-            <img src="../assets/img/paisaje5.jpg" alt="">
+            <div class="img_estudio">
+                <img src="../assets/img/paisaje8.jpg" alt="">
+            </div>            
             <div class="textoEstudio">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <h3>Inazuma</h3>
+                <p>Inazuma (en japonés: 稲 妻 [Inazuma], "Relámpago") es una de las siete naciones de Teyvat. Es una nación archipelágica que adora a Beelzebul, la Arconte Electro, quien a su vez dirige la Entidad Controladora local, el Shogunato de Inazuma. Inazuma se encuentra aproximadamente a 4 km hacia el Sureste del Puerto de Liyue, y se encuentra aún más cerca del Mar Oscuro.</p>
+                <p>« Un archipiélago situado en el extremo oriente de Teyvat. Encara tormentas perpetuas, adéntrate en la isla de las flores de cerezo, en sus playas, los imponentes acantilados y las solitarias montañas, y presencia la eternidad perseguida por Su Excelencia, la todapoderosa Narukami. »</p>
+                <button class="btnEstudios">
+                    <div class="circulo"></div>
+                    Ver mas <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="estudio">
+            <div class="img_estudio">
+                <img src="../assets/img/paisaje9.jpg.crdownload" alt="">
+            </div>            
+            <div class="textoEstudio">
+                <h3>Sumeru</h3>
+                <p>Sumeru (véase Etimología) es una de las sietes naciones de Teyvat. Es la ciudad-estado que adora a la Diosa de la Sabiduría, la Reina Menor Kusanali, la Arconte Dendro.
+                    Se le conoce por ser el centro de aprendizaje de Teyvat, así como por albergar la Academia de Sumeru.</p>
+                <p>« La nación de eruditos situada en el medio oeste de Teyvat. Una tierra exótica en la que coexisten exuberantes bosques tropicales y áridos desiertos, donde crecen y se marchitan innumerables frutos de la sabiduría. Todo viajero que llegue a esta nación podrá adquirir valiosos conocimientos atravesando el bosque y subiendo los escalones que conducen hacia el conocimiento o adentrándose en el desierto y descubriendo sus antiguas ruinas. »</p>
                 <button class="btnEstudios">
                     <div class="circulo"></div>
                     Ver mas <i class="fa-solid fa-arrow-right"></i>
@@ -73,19 +102,34 @@
         </div>
     </main>
     <aside>
-
     </aside>
-    <footer>
-        <a class="logoPie" href="./index.html">
-            <img src="../assets/img/logo-social.png" alt="">
-        </a>
-        <ul class="pie">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/propuesta.html">Propuesta</a></li>
-            <li><a href="../pages/estudios.html">Estudios</a></li>
-            <li><a href="../pages/trabajos.html">Trabajos</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-    </footer>
+    <footer class="pie_pagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../assets/img/logo-social.png" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, illum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, illum.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red_social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a> 
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2023 <b>Kreyzr</b> - Todos los Derechos Reservados</small>
+        </div>
+       </footer>
 </body>
 </html>

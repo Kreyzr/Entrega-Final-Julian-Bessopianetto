@@ -1,0 +1,87 @@
+.nav{
+  background-color: black;
+  height: 80px;
+  color: white;
+}
+
+.nav_container{
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav_logo{
+  width: 150px;
+  height: auto;
+}
+
+.nav_menu{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3em;
+}
+
+.nav_item{
+  color: white;
+  text-decoration: none;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+
+}
+
+.nav_item::after{
+content: "";
+display: block;
+background: #fff;
+width: 90%;
+margin-top: 3px;
+height: 3px;
+clip-path: var(--clippy);
+transition: clip-path .3s;
+}
+
+.nav_item:hover{
+  --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.nav_label, .nav_input{
+  display: none;
+
+}
+
+@media (max-width: 850px){
+    .nav{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+  .nav_label{
+    display: block;
+    cursor: pointer;
+  }
+  .nav_menu{
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10%;
+    top: 80px;
+    bottom: 0;
+    background-color: #3d3d3d;
+    height: 60px;
+    width: 100%;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.5s ease-in-out;  
+  }
+}
+
+.nav_input:checked + .nav_menu{
+  background-color: #3d3d3d;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
