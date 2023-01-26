@@ -9,13 +9,13 @@
     background-position: center;
   }
   .container > h1{
-    font-size: 46px;
+    font-size: 80px;
     color: white;
     -webkit-text-stroke: 2px black;
 }
 .contenido{
     display: flex;
-    margin: 20px;
+    margin: 50px 13%;
 }
 
 .contenido_text > h3{
@@ -37,7 +37,7 @@
     width: 100%;
 }
 .cards_index{
-    margin: 45px;
+    margin: 50px 13%;
 }
 .card_index > a > img{
     border-radius: 15px;
@@ -63,5 +63,8 @@
         width: 250px;
         margin: 20px;
         border-radius: 15px;
+    }
+    .contenido{
+        display: block;
     }
 }
